@@ -1,105 +1,100 @@
+@charset "utf-8";
+
 * {
   box-sizing: border-box;
 }
 
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0;
-  padding: 0;
-}
-
 body {
+  margin: 0;
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
-}
-
-li {
-  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 header {
   background-color: rgba(34, 49, 52, 0.9);
   height: 65px;
-  width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
+  width: 100%;
 }
 
 header .container {
-  width: 1170px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-header img {
+.header-left img {
   width: 124px;
   padding: 20px 0;
 }
 
-header a {
-  color: white;
+.header-right a {
+  display: inline-block;
   line-height: 65px;
-  padding: 21px;
+  padding: 0 25px;
+  color: white;
+}
+
+.header-right a:hover {
   transition: all 0.5s;
-}
-
-header a:hover {
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  display: block;
 }
 
 .top-wrapper {
   background-image: url(https://prog-8.com/images/html/advanced/top.png);
   background-size: cover;
-  padding: 180px 0 100px 0;
-}
-
-.top-wrapper .container {
-  text-align: center;
   color: white;
+  padding: 180px 0 100px 0;
+  text-align: center;
 }
 
-.top-wrapper .container h1 {
+.top-wrapper h1 {
   font-size: 45px;
   font-weight: bold;
   letter-spacing: 5px;
   opacity: 0.7;
 }
 
-.top-wrapper .container p {
+.top-wrapper p {
   opacity: 0.7;
 }
 
-.progate {
+.top-wrapper a {
+  color: white;
+  padding: 8px 24px;
+}
+
+.last {
   margin-bottom: 30px;
 }
 
 .btn {
-  padding: 8px 24px;
-  color: white;
   opacity: 0.8;
-  border-radius: 4px
-}
-
-.btn:hover {
-  opacity: 1;
+  border-radius: 5px;
 }
 
 .signup {
   background-color: #239b76;
-  margin-top: 30px;
+}
+
+.signup:hover {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.or {
+  margin: 15px 0;
 }
 
 .facebook {
@@ -107,82 +102,80 @@ header a:hover {
   margin-right: 10px;
 }
 
+.facebook:hover {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
 .twitter {
   background-color: #55acee;
 }
 
-.or {
-  margin: 15px 0;
+.twitter:hover {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.fab {
+  margin-right: 10px;
 }
 
 .middle-wrapper {
-  height: 580px;
-  padding-top: 80px;
-  text-align: center;
   background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 0;
 }
 
-.middle-wrapper h2 {
-  font-weight: normal;
+.heading {
   color: #5f5d60;
+  font-weight: normal;
 }
 
-.middle-wrapper .container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.items {
-  float: left;
-  width: 25%;
+.lessons {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.item {
-  position: relative;
-  padding-bottom: 15px;
+.lesson {
+  width: 25%;
 }
 
-.name {
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
   position: absolute;
-  top: 90px;
+  top: 75px;
   width: 100%;
   color: white;
 }
 
-.text {
-  margin: 0 auto;
-  width: 80%;
-  font-size: 13px;
+.text-contents {
   color: #b3aeb5;
+  font-size: 13px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .bottom-wrapper {
-  margin: 80px 0;
   text-align: center;
-}
-
-.bottom-wrapper .container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.bottom-wrapper .container h2 {
   color: #5f5d60;
-  font-weight: normal;
+  padding: 80px 0;
 }
 
-.bottom-wrapper .container h3 {
-  color: #5f5d60;
-  font-weight: normal;
-  margin-bottom: 75px
+.bottom-wrapper p {
+  margin-bottom: 50px;
 }
 
 .develop {
- background-color: #5dca88; 
- padding: 15px 40px;
- margin-top: 50px;
- box-shadow: 0 7px #1a7940;
+  color: white;
+  background-color: #5dca88;
+  padding: 15px 40px;
+  border-radius: 0;
+  box-shadow: 0 7px #1a7940;
 }
 
 .develop:active {
@@ -192,13 +185,9 @@ header a:hover {
 }
 
 footer {
-  border: 1px solid #eee;
+  border-top: 1px solid #eee;
+  color: #b3aeb5;
   padding: 30px 0;
-}
-
-footer .container {
-  width: 1170px;
-  margin: 0 auto;
 }
 
 footer img {
@@ -207,17 +196,12 @@ footer img {
 
 footer p {
   font-size: 12px;
-  color: #b3aeb5;
 }
 
-.header-menu {
-  float: right;
-  margin: 21px 0;
+.fa-bars {
   font-size: 25px;
+  padding: 21px 0;
   color: white;
+  float: right;
   display: none;
-}
-
-.clear {
-  clear: left;
 }
