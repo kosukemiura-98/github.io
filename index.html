@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="main_logo.png">
-      </div>
-      <div class="header-menu">
-          <span class="fa fa-bars"></span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progate</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img src="https://prog-8.com/images/html/advanced/main_logo.png">
         </div>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a class="login" href="#">ログイン</a>
+        <i class="fas fa-bars"></i>
+        <div class="header-right">
+          <a href="#">レッスン</a>
+          <a href="#">新規登録</a>
+          <a href="#">ログイン</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>LEARN TO CODE</h1>
+        <h1>LEARN TO BE CREATIVE.</h1>
+        <p class="progate">Progateはオンラインプログラミング学習サービスです。</p>
+        <p class="progate last">初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+        <a class="btn signup" href="#">新規登録はこちら</a>
+        <p class="or">or</p>
+        <a class="btn facebook" href="#"><i class="fab fa-facebook-f"></i>Facebookで登録</a>
+        <a class="btn twitter" href="#"><i class="fab fa-twitter"></i>Twitterで登録</a>
       </div>
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>
-      LEARN TO BE CREATIVE.</h1>
-      <p class="progate">Progateはオンラインプログラミング学習サービスです。<br>
-      初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。
-      </p>
-      <a class="btn signup" href="#">新規登録はこちら</a>
-      <p class="or">or</p>
-      <a class="btn facebook" href="#">Facebookで登録</a>
-      <a class="btn twitter" href="#">Twitterで登録</a>
-    </div>
-  </div>
-  <div class="middle-wrapper">
-    <div class="container">
-    <h2>Learn Where to Get Started!</h2>
-      <div class="items">
-        <div class="item">
-          <img src="html.png">
-          <p class="name">MTML & CSS</p>
+
+    <div class="middle-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Learn Where to Get Started!</h2>
         </div>
-        <p class="text">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-      </div>
-      <div class="items">
-        <div class="item">
-          <img src="jQuery.png">
-          <p class="name">JQuery</p>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/html.png">
+              <p>HTML&CSS</p>
+            </div>
+            <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+              <p>jQuery</p>
+            </div>
+            <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/ruby.png">
+              <p>Ruby</p>
+            </div>
+            <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/php.png">
+              <p>PHP</p>
+            </div>
+            <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          </div>
         </div>
-        <p class="text">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。
-  </p>
       </div>
-      <div class="items">
-        <div class="item">
-          <img src="ruby.png">
-          <p class="name">Ruby</p>
-        </div>
-        <p class="text">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。
-  </p>
+    </div>
+
+    <div class="bottom-wrapper">
+      <div class="container">
+        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+        <p>Let's learn to code, learn to be creative!</p>
+        <a class="btn develop" href="#">さっそく開発する</a>
       </div>
-      <div class="items">
-        <div class="item">
-          <img src="php.png">
-          <p class="name">PHP</p>
-        </div>
-        <p class="text">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。
-  </p>
+    </div>
+
+    <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+        <p>Learn to Code.Learn to be Creative.</p>
       </div>
-      <div class="clear"> </div>
-    </div>
-  </div>
-  <div class="bottom-wrapper">
-    <div class="container">
-       <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-       <h3>Let's learn to code, learn to be creative!</h3>
-       <a class="btn develop" href="#">さっそく開発する</a>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="footer_logo.png">
-      <p>Learn to Code.Learn to be Creative.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
