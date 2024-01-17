@@ -1,93 +1,543 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progate</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img src="https://prog-8.com/images/html/advanced/main_logo.png">
-        </div>
-        <i class="fas fa-bars"></i>
-        <div class="header-right">
-          <a href="#">レッスン</a>
-          <a href="#">新規登録</a>
-          <a href="#">ログイン</a>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- reset.css -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- style.css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>LEARN TO CODE</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p class="progate">Progateはオンラインプログラミング学習サービスです。</p>
-        <p class="progate last">初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-        <a class="btn signup" href="#">新規登録はこちら</a>
-        <p class="or">or</p>
-        <a class="btn facebook" href="#"><i class="fab fa-facebook-f"></i>Facebookで登録</a>
-        <a class="btn twitter" href="#"><i class="fab fa-twitter"></i>Twitterで登録</a>
-      </div>
-    </div>
+<body>
+  <header class="header">
+    <h1 class="header__title">
+      <a href="#" class="header__logo--link">
+        <img src="assets/img/logo.png" alt="CLIMATE TECHNOLOGIES">
+      </a>
+    </h1>
+    <ul class="header__list">
+      <li class="header__item">
+        <a href="#reason" class="header__item--link">選ばれる理由</a>
+      </li>
+      <li class="header__item">
+        <a href="#flow" class="header__item--link">サービスの流れ</a>
+      </li>
+      <li class="header__item">
+        <a href="#faq" class="header__item--link">よくある質問</a>
+      </li>
+      <li class="header__item">
+        <a href="#about" class="header__item--link">クラテクについて</a>
+      </li>
+    </ul>
+    <a href="tel:08057360250" class="header__number">080-5736-0250</a>
+  </header>
 
-    <div class="middle-wrapper">
+  <main>
+    <div class="mv">
       <div class="container">
-        <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
+        <div class="mv__textContents">
+          <div class="mv__labels">
+            <p class="mv__label">IMDS</p>
+            <p class="mv__label">chemSHERPA-AI/CI</p>
+            <p class="mv__label">紛争鉱物調査（CMRT/EMRT）</p>
+            <p class="mv__label">JAPIAシート</p>
+            <p class="mv__label">その他各社環境調査資料の作成</p>
+          </div>
+          <p class="mv__text">お困りごとはございませんか? 我々が一括で作成業務を受託します!</p>
+          <h2 class="mv__title">
+            煩雑なその業務<br>
+            クラテクにお任せください！
+          </h2>
+          <a href="#contact" class="mv__btn">お問い合わせはこちら</a>
         </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML&CSS</p>
-            </div>
-            <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-          </div>
+        <div class="mv__picture">
+          <img src="assets/img/mv.png" alt="煩雑なその業務クラテクにお任せください！">
         </div>
       </div>
     </div>
 
-    <div class="bottom-wrapper">
+    <section class="problem" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="container">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <p>Let's learn to code, learn to be creative!</p>
-        <a class="btn develop" href="#">さっそく開発する</a>
+        <div class="problem__picture">
+          <img src="assets/img/problem.png" alt="">
+        </div>
+        <h2 class="section__title">このようなことでお困りではありませんか？</h2>
+        <p class="section__en">PROBLEM</p>
+        <div class="problem__boxs">
+          <div class="problem__box">
+            <div class="problem__icon">
+              <img src="assets/img/icon01.png" alt="人手が足りない">
+            </div>
+            <h3 class="problem__title">人手が足りない</h3>
+            <p class="problem__text">CiP(含有化学物質調査)管理業務は顧客各社によってフォーマットや要求資料が異なることも多く、非常に業務が煩雑です。</p>
+          </div>
+          <div class="problem__box">
+            <div class="problem__icon">
+              <img src="assets/img/icon02.png" alt="教育に時間がかかる">
+            </div>
+            <h3 class="problem__title">教育に時間がかかる</h3>
+            <p class="problem__text">新しい人材を採用/異動させたとしても、教育に時間がかかり、業務負荷の低減は製造業を中心とした各社メーカー様の急務です。</p>
+          </div>
+          <div class="problem__box">
+            <div class="problem__icon">
+              <img src="assets/img/icon03.png" alt="アドバイスが欲しい">
+            </div>
+            <h3 class="problem__title">アドバイスが欲しい</h3>
+            <p class="problem__text">
+              サプライヤーからどのように情報をもらえばよいのか…サプライヤーがなかなか情報を提出してくれない…どこまでの情報をサプライヤーに要求するのが慣例、適切なのか…他社はどのように情報収集しているのか…このような判断に迷うお困りごとが、ご担当者お一人の決断に委ねられてしまっている企業様が多くございます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <div class="solution">
+        <div class="solution__circle">
+          <div class="solution__wrapper">
+            <p class="solution__text">その<br><span class="solution__text--inline">悩み</span></p>
+          </div>
+        </div>
+        <h2 class="solution__title"><span class="solution__title--inline">ク</span><span
+            class="solution__title--inline">ラ</span><span class="solution__title--inline">テ</span><span
+            class="solution__title--inline">ク</span>がまるっと解決します！</h2>
+        <div class="solution__boxs">
+          <div class="solution__box">
+            <h3 class="solution__ttl">サポート体制</h3>
+            <p class="solution__txt">アドバイスを提供するコンサルタントと、作業を受託するカスタマーサクセスをアサインいたします</p>
+          </div>
+          <div class="solution__box">
+            <h3 class="solution__ttl">対応範囲</h3>
+            <p class="solution__txt">IMDS、chemSHERPA-AI/CI、紛争鉱物調査（CMRT/EMRT）、JAPIAシート、その他各社環境調査資料</p>
+          </div>
+          <div class="solution__box">
+            <h3 class="solution__ttl">対応地域</h3>
+            <p class="solution__txt solution__txt--big">全国対応</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer>
+    <div class="container reason__container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section class="reason" id="reason">
+        <h2 class="section__title">クラテクが選ばれる理由</h2>
+        <p class="section__en">STRENGTH</p>
+        <div class="reason__boxs">
+          <div class="reason__box">
+            <div class="reason__textContents">
+              <h3 class="reason__title">
+                クラテクは東証スタンダード上場企業<br>
+                シライ電子工業株式会社の100%子会社です
+              </h3>
+              <p class="reason__text">
+                親会社が上場製造メーカーシライ電子工業株式会社であり、長年の含有化学物質に関する知見と製造メーカーならではの成果物に対する信頼性を保有しています。<br>
+                長年培ったノウハウで、お客様のお困りごとに真摯に対応いたします。
+              </p>
+            </div>
+            <div class="reason__picture">
+              <img src="assets/img/reason01.png" alt="クラテクは東証スタンダード上場企業シライ電子工業株式会社の100%子会社です">
+            </div>
+          </div>
+          <div class="reason__box">
+            <div class="reason__textContents">
+              <h3 class="reason__title">
+                作業委託とコンサルティングの<br>
+                両面でのご支援が可能
+              </h3>
+              <p class="reason__text">
+                環境資料の作成に対する人手が足りない企業様へのご支援と、含有化学物質調査に関する知見と経験が不足している企業様へのご支援の両面から弊社が全力でサポートいたします。
+              </p>
+            </div>
+            <div class="reason__picture">
+              <img src="assets/img/reason02.png" alt="作業委託とコンサルティングの両面でのご支援が可能">
+            </div>
+          </div>
+          <div class="reason__box">
+            <div class="reason__textContents">
+              <h3 class="reason__title">
+                潤沢なリソースを背景とした万全のサポート体制
+              </h3>
+              <p class="reason__text">
+                人手不足の企業様に対して、お客様のご希望の納期にて環境資料の作成代行が可能です。<br>弊社の潤沢なリソースを背景に、貴社の固定費の変動費化の足掛かりにして頂くことができます。
+              </p>
+            </div>
+            <div class="reason__picture">
+              <img src="assets/img/reason03.png" alt="潤沢なリソースを背景とした万全のサポート体制">
+            </div>
+          </div>
+        </div>
+        <a href="#" class="reason__btn">お問い合わせはこちら</a>
+      </section>
+    </div>
+
+    <section class="flow" id="flow" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to Code.Learn to be Creative.</p>
+        <h2 class="section__title">サービスの流れ</h2>
+        <p class="section__en">FLOW</p>
+        <div class="flow__boxs">
+          <div class="flow__box">
+            <div class="flow__picture">
+              <img src="assets/img/flow01.png" alt="ご相談">
+            </div>
+            <div class="flow__textContents">
+              <h3 class="flow__title">ご相談</h3>
+              <p class="flow__text">
+                ご相談は無料です。<br>
+                お問い合わせからお気軽にご相談ください。
+              </p>
+            </div>
+          </div>
+          <div class="flow__box">
+            <div class="flow__picture">
+              <img src="assets/img/flow02.png" alt="ヒアリング">
+            </div>
+            <div class="flow__textContents">
+              <h3 class="flow__title">ヒアリング</h3>
+              <p class="flow__text">
+                貴社のご状況により、最適なプランをご提案しご契約頂きます。また、各環境資料基本情報のご確認も併せて行います。
+              </p>
+            </div>
+          </div>
+          <div class="flow__box">
+            <div class="flow__picture">
+              <img src="assets/img/flow03.png" alt="必要書類のご提出">
+            </div>
+            <div class="flow__textContents">
+              <h3 class="flow__title">必要書類のご提出</h3>
+              <p class="flow__text">
+                顧客より環境資料依頼がございましたら、依頼内容と該当製品情報をご提出頂きます<br>
+                材料情報、化学物質情報、部品情報、その他必要書類など
+              </p>
+            </div>
+          </div>
+          <div class="flow__box">
+            <div class="flow__picture">
+              <img src="assets/img/flow04.png" alt="お客様での内容チェック">
+            </div>
+            <div class="flow__textContents">
+              <h3 class="flow__title">お客様での内容チェック</h3>
+              <p class="flow__text">
+                お客様にて、データを確認頂きます。特にご依頼初期は、企業内入力ルールなど間違いが無いか確認していただきます。
+              </p>
+            </div>
+          </div>
+          <div class="flow__box">
+            <div class="flow__picture">
+              <img src="assets/img/flow05.png" alt="納品">
+            </div>
+            <div class="flow__textContents">
+              <h3 class="flow__title">納品</h3>
+              <p class="flow__text">
+                納期は5営業日～7営業日です。お急ぎの案件などはご相談頂ければ対応致します。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="pre" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <div class="container">
+        <h2 class="section__title">ご準備いただきたいもの</h2>
+        <p class="section__en">PREPARATIONS</p>
+        <div class="pre__boxs">
+          <div class="pre__box">
+            <div class="pre__picture">
+              <img src="assets/img/pre01.png" alt="素材化学物質情報">
+            </div>
+            <p class="pre__text">素材化学物質情報</p>
+          </div>
+          <div class="pre__box">
+            <div class="pre__picture">
+              <img src="assets/img/pre02.png" alt="構成部品リスト">
+            </div>
+            <p class="pre__text">構成部品リスト</p>
+          </div>
+          <div class="pre__box">
+            <div class="pre__picture">
+              <img src="assets/img/pre03.png" alt="材料情報">
+            </div>
+            <p class="pre__text">材料情報</p>
+          </div>
+          <div class="pre__box">
+            <div class="pre__picture">
+              <img src="assets/img/pre04.png" alt="部品図面">
+            </div>
+            <p class="pre__text">部品図面</p>
+          </div>
+          <div class="pre__box">
+            <div class="pre__picture">
+              <img src="assets/img/pre05.png" alt="その他必要情報">
+            </div>
+            <p class="pre__text">その他必要情報</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container container2" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section class="faq" id="faq">
+        <h2 class="section__title">よくあるご質問</h2>
+        <p class="section__en">FAQ</p>
+        <div class="faq__boxs">
+          <div class="faq__box">
+            <div class="faq__header">
+              <p class="faq__left">Q1</p>
+              <p class="faq__right">委託サポートってどこまでやってくれるの?</p>
+            </div>
+            <p class="faq__body">
+              弊社のサービスは、大きく分けて①アドバイスと②作業代行の二つのサービスがございます<br>
+              アドバイス: 部品構成確認、材料情報、サプライヤーからの含有化学物質情報の手配、図面手配作業: 部品の構成質量確認や報告物質確認、報告書データ入力アドバイスと作業代行の両面からのご支援が可能です
+            </p>
+          </div>
+          <div class="faq__box">
+            <div class="faq__header">
+              <p class="faq__left">Q2</p>
+              <p class="faq__right">納期はどれくらいですか?</p>
+            </div>
+            <p class="faq__body">
+              弊社のサービスは、大きく分けて①アドバイスと②作業代行の二つのサービスがございます<br>
+              アドバイス: 部品構成確認、材料情報、サプライヤーからの含有化学物質情報の手配、図面手配作業: 部品の構成質量確認や報告物質確認、報告書データ入力アドバイスと作業代行の両面からのご支援が可能です
+            </p>
+          </div>
+          <div class="faq__box">
+            <div class="faq__header">
+              <p class="faq__left">Q3</p>
+              <p class="faq__right">料金はどれくらいですか?</p>
+            </div>
+            <p class="faq__body">
+              弊社のサービスは、大きく分けて①アドバイスと②作業代行の二つのサービスがございます<br>
+              アドバイス: 部品構成確認、材料情報、サプライヤーからの含有化学物質情報の手配、図面手配作業: 部品の構成質量確認や報告物質確認、報告書データ入力アドバイスと作業代行の両面からのご支援が可能です
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <h2 class="section__title">chemSHERPAとは？</h2>
+        <p class="section__en">WHAT’S chemSHERPA</p>
+        <div class="about__box">
+          <p class="about__title">chemSHEPA</p>
+          <p class="about__text">
+            chemSHERPA（読み方：ケムシェルパ）とは、<br>
+            製品に含まれる化学物質の情報を川上企業から川下企業まで<br>
+            サプライチェーン全体で適正に管理し、確実かつ効率的に伝達するために、<br>
+            経済産業省主導で2015年に開発・リリースされた<br>
+            情報伝達共通スキーム（またデータ作成支援ツール）を指します。
+          </p>
+          <div class="about__picture">
+            <img src="assets/img/about.png" alt="chemSHEPA">
+          </div>
+        </div>
+      </section>
+
+      <section class="company" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <h2 class="section__title">会社概要</h2>
+        <p class="section__en">COMPANY</p>
+        <div class="company__area">
+          <dl class="company__row">
+            <dt class="company__left">会社名</dt>
+            <dd class="company__right">株式会社クラテク</dd>
+          </dl>
+          <dl class="company__row">
+            <dt class="company__left">所在地</dt>
+            <dd class="company__right">〒105-0022　東京都港区海岸一丁目4番22号　SNビル9階</dd>
+          </dl>
+          <dl class="company__row">
+            <dt class="company__left">電話番号</dt>
+            <dd class="company__right">070-8509-0279</dd>
+          </dl>
+          <dl class="company__row">
+            <dt class="company__left">事業内容</dt>
+            <dd class="company__right">GHG排出量管理業務BPO事業/環境資料作成/製品含有化学物質管理BPO事業</dd>
+          </dl>
+          <dl class="company__row">
+            <dt class="company__left">親会社</dt>
+            <dd class="company__right">
+              シライ電子工業株式会社<br>
+              本社機能所在地 〒520-2322 滋賀県野洲市南櫻1477-8
+            </dd>
+          </dl>
+          <dl class="company__row">
+            <dt class="company__left">事業内容</dt>
+            <dd class="company__right">プリント配線板並びにプリント配線板外観検査機の設計・製造・販売</dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section class="contact" id="contact">
+        <h2 class="section__title">問い合わせ</h2>
+        <p class="section__en">CONTACT</p>
+        <p class="contact__text">
+          お急ぎの方はお電話にてお問い合わせください。<br>
+          こちらからしつこい営業電話等はいたしません。ご安心ください。
+        </p>
+        <a href="tel:08057360250" class="contact__number">080-5736-0250</a>
+        <form action="#" class="contact__form">
+          <dl class="contact__row">
+            <dt class="contact__left">
+              <p class="contact__info contact__info--required">お名前</p>
+            </dt>
+            <dd class="contact__right">
+              <div class="contact__wrapper">
+                <input type="text" name="name" id="name1">
+                <input type="text" name="name" id="name2" class="contact__name">
+              </div>
+            </dd>
+          </dl>
+          <dl class="contact__row">
+            <dt class="contact__left">
+              <p class="contact__info contact__info--required">メールアドレス</p>
+            </dt>
+            <dd class="contact__right">
+              <input type="email" name="email1" id="email1">
+            </dd>
+          </dl>
+          <dl class="contact__row">
+            <dt class="contact__left">
+              <p class="contact__info contact__info--required">メールアドレス確認</p>
+            </dt>
+            <dd class="contact__right">
+              <input type="email" name="email2" id="email2">
+            </dd>
+          </dl>
+          <dl class="contact__row">
+            <dt class="contact__left">
+              <p class="contact__info">貴社名</p>
+            </dt>
+            <dd class="contact__right">
+              <input type="text" name="company" id="company">
+            </dd>
+          </dl>
+          <dl class="contact__row">
+            <dt class="contact__left">
+              <p class="contact__info contact__info--required">ご相談内容</p>
+            </dt>
+            <dd class="contact__right contact__right--select">
+              <select name="contents" id="contents">
+                <option value="agency">[作成代行ご希望] IMDS、chemSHERPA-AI/CI等、環境資料の作成代行に興味がある</option>
+                <option value="advice">[アドバイスご希望] IMDS、chemSHERPA-AI/CI等、環境資料のアドバイスに興味がある</option>
+                <option value="both">[両方ご希望] 作成代行、アドバイスの両方に興味がある</option>
+              </select>
+            </dd>
+          </dl>
+          <dl class="contact__row contact__row2">
+            <dt class="contact__left">
+              <p class="contact__info">
+                その他、ご記載事項が<br>
+                あれば追記下さい
+              </p>
+            </dt>
+            <dd class="contact__right">
+              <textarea name="other"></textarea>
+            </dd>
+          </dl>
+          <dl class="contact__row contact__row2">
+            <dt class="contact__left">
+              <p class="contact__info contact__info--required  contact__info--required2">
+                個人情報の<br>
+                取扱について
+              </p>
+            </dt>
+            <dd class="contact__right">
+              <p class="contact__txt">ご入力いただいた個人情報は、お問い合わせに対する回答などお問い合わせに伴うお客様へのご連絡を行うため利用させていただきます。以下の「個人情報の取扱い」
+                にご同意いただいたうえで「確認画面」 へお進みください。</p>
+              <p class="contact__privacy">
+                プライバシーポリシー<br>
+                株式会社クラテク（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。<br>
+                第1条（個人情報）<br>
+                「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。<br>
+                第2条（個人情報の収集方法）<br>
+                当社は、ユーザーが利用登録をする際に氏名，生年月日、住所、電話番号、メールアドレスなどの個人情報をお尋ねすることがあります。また、ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を、当社の提携先（情報提供元、広告主、広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。<br>
+                第3条（個人情報を収集・利用する目的）<br>
+                当社が個人情報を収集・利用する目的は、以下のとおりです。<br>
+                ・当社サービスの提供・運営のため<br>
+                ・ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）<br>
+                ・ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため<br>
+                ・メンテナンス，重要なお知らせなど必要に応じたご連絡のため<br>
+                ・利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため<br>
+                ・ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため<br>
+                ・有料サービスにおいて，ユーザーに利用料金を請求するため<br>
+                ・上記の利用目的に付随する目的<br>
+                第4条（利用目的の変更）<br>
+                ・当社は、利用目的が変更前と関連性を有すると合理的に認められる場合に限り、個人情報の利用目的を変更するものとします。<br>
+                ・利用目的の変更を行った場合には、変更後の目的について、当社所定の方法により、ユーザーに通知し、または本ウェブサイト上に公表するものとします。<br>
+                第5条（個人情報の第三者提供）<br>
+                ・当社は，次に掲げる場合を除いて、あらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。ただし、個人情報保護法その他の法令で認められる場合を除きます。<br>
+                ・人の生命，身体または財産の保護のために必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+                ・公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって，本人の同意を得ることが困難であるとき<br>
+                ・国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって，本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき<br>
+                ・予め次の事項を告知あるいは公表し，かつ当社が個人情報保護委員会に届出をしたとき<br>
+                ・利用目的に第三者への提供を含むこと<br>
+                ・第三者に提供されるデータの項目<br>
+                ・第三者への提供の手段または方法<br>
+                ・本人の求めに応じて個人情報の第三者への提供を停止すること<br>
+                ・本人の求めを受け付ける方法<br>
+                ・前項の定めにかかわらず，次に掲げる場合には、当該情報の提供先は第三者に該当しないものとします。<br>
+                ・当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合<br>
+                ・合併その他の事由による事業の承継に伴って個人情報が提供される場合<br>
+                ・個人情報を特定の者との間で共同して利用する場合であって，その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称について，あらかじめ本人に通知し，または本人が容易に知り得る状態に置いた場合<br>
+                第6条（個人情報の開示）<br>
+                ・当社は、本人から個人情報の開示を求められたときは、本人に対し、遅滞なくこれを開示します。ただし、開示することにより次のいずれかに該当する場合は、その全部または一部を開示しないこともあり、開示しない決定をした場合には、その旨を遅滞なく通知します。なお、個人情報の開示に際しては、1件あたり1，000円の手数料を申し受けます。<br>
+                ・本人または第三者の生命，身体，財産その他の権利利益を害するおそれがある場合<br>
+                ・当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合<br>
+                ・その他法令に違反することとなる場合<br>
+                ・前項の定めにかかわらず、履歴情報および特性情報などの個人情報以外の情報については，原則として開示いたしません。<br>
+                第7条（個人情報の訂正および削除）<br>
+                ・ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。<br>
+                ・当社は、ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には、遅滞なく、当該個人情報の訂正等を行うものとします。
+                ・当社は、前項の規定に基づき訂正等を行った場合、または訂正等を行わない旨の決定をしたときは遅滞なく、これをユーザーに通知します。
+                第8条（個人情報の利用停止等）
+                ・当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には、遅滞なく必要な調査を行います。<br>
+                ・前項の調査結果に基づき、その請求に応じる必要があると判断した場合には、遅滞なく、当該個人情報の利用停止等を行います。<br>
+                ・当社は、前項の規定に基づき利用停止等を行った場合、または利用停止等を行わない旨の決定をしたときは、遅滞なく、これをユーザーに通知します。<br>
+                ・前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。<br>
+                第9条（プライバシーポリシーの変更）<br>
+                ・本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく、変更することができるものとします。<br>
+                ・当社が別途定める場合を除いて、変更後のプライバシーポリシーは、本ウェブサイトに掲載したときから効力を生じるものとします。<br>
+                第10条（お問い合わせ窓口）<br>
+                本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。<br>
+                住所：〒105-0022　東京都港区海岸一丁目4番22号　SNビル9階<br>
+                社名：株式会社クラテク<br>
+                代表取締役：白井基治<br>
+                Eメールアドレス：
+              </p>
+              <div class="contact__checkArea">
+                <input type="checkbox" name="check" id="check" class="contact__check">
+                <label for="check" class="contact__checkLabel">同意する</label>
+              </div>
+            </dd>
+          </dl>
+          <div class="contact__btnArea">
+            <input type="submit" value="送信する" class="contact__btn">
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="banner__wrapper">
+      <a href="#contact" class="banner">お問い合わせはこちら</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- script.js -->
+  <script src="assets/js/script.js"></script>i
+</body>
+
 </html>
