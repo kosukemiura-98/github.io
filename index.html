@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
   <!-- style.css -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -35,7 +37,31 @@
       </li>
     </ul>
     <a href="tel:08057360250" class="header__number">080-5736-0250</a>
+    <div class="header__hamburger is-sp">
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+    </div>
   </header>
+
+  <aside class="drawer">
+    <ul class="drawer__list">
+      <li class="drawer__item">
+        <a href="#reason" class="drawer__item--link">選ばれる理由</a>
+      </li>
+      <li class="drawer__item">
+        <a href="#flow" class="drawer__item--link">サービスの流れ</a>
+      </li>
+      <li class="drawer__item">
+        <a href="#faq" class="drawer__item--link">よくある質問</a>
+      </li>
+      <li class="drawer__item">
+        <a href="#about" class="drawer__item--link">クラテクについて</a>
+      </li>
+    </ul>
+    <a href="#contact" class="drawer__btn">お問い合わせはこちら</a>
+    <a href="tel:08057360250" class="drawer__number">080-5736-0250</a>
+  </aside>
 
   <main>
     <div class="mv">
@@ -48,11 +74,8 @@
             <p class="mv__label">JAPIAシート</p>
             <p class="mv__label">その他各社環境調査資料の作成</p>
           </div>
-          <p class="mv__text">お困りごとはございませんか? 我々が一括で作成業務を受託します!</p>
-          <h2 class="mv__title">
-            煩雑なその業務<br>
-            クラテクにお任せください！
-          </h2>
+          <p class="mv__text">お困りごとはございませんか?<br class="is-sp">我々が一括で作成業務を受託します!</p>
+          <h2 class="mv__title">煩雑なその業務<br>クラテクに<br class="is-sp">お任せください！</h2>
           <a href="#contact" class="mv__btn">お問い合わせはこちら</a>
         </div>
         <div class="mv__picture">
@@ -61,12 +84,16 @@
       </div>
     </div>
 
+    <div class="cta is-sp">
+      <a href="#contact" class="cta__btn">お問い合わせはこちら</a>
+    </div>
+
     <section class="problem" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="container">
         <div class="problem__picture">
-          <img src="assets/img/problem.png" alt="">
+          <img src="assets/img/problem.png" alt="このようなことでお困りではありませんか？">
         </div>
-        <h2 class="section__title">このようなことでお困りではありませんか？</h2>
+        <h2 class="section__title">このようなことで<br class="is-sp">お困りではありませんか？</h2>
         <p class="section__en">PROBLEM</p>
         <div class="problem__boxs">
           <div class="problem__box">
@@ -105,7 +132,7 @@
         </div>
         <h2 class="solution__title"><span class="solution__title--inline">ク</span><span
             class="solution__title--inline">ラ</span><span class="solution__title--inline">テ</span><span
-            class="solution__title--inline">ク</span>がまるっと解決します！</h2>
+            class="solution__title--inline">ク</span>が<br class="is-sp">まるっと解決します！</h2>
         <div class="solution__boxs">
           <div class="solution__box">
             <h3 class="solution__ttl">サポート体制</h3>
@@ -129,21 +156,21 @@
         <p class="section__en">STRENGTH</p>
         <div class="reason__boxs">
           <div class="reason__box">
+            <div class="reason__picture">
+              <img src="assets/img/reason01.png" alt="クラテクは東証スタンダード上場企業シライ電子工業株式会社の100%子会社です">
+            </div>
             <div class="reason__textContents">
-              <h3 class="reason__title">
-                クラテクは東証スタンダード上場企業<br>
-                シライ電子工業株式会社の100%子会社です
-              </h3>
+              <h3 class="reason__title">クラテクは東証スタンダード上場企業<br class="is-pc">シライ電子工業株式会社の100%子会社です</h3>
               <p class="reason__text">
                 親会社が上場製造メーカーシライ電子工業株式会社であり、長年の含有化学物質に関する知見と製造メーカーならではの成果物に対する信頼性を保有しています。<br>
                 長年培ったノウハウで、お客様のお困りごとに真摯に対応いたします。
               </p>
             </div>
-            <div class="reason__picture">
-              <img src="assets/img/reason01.png" alt="クラテクは東証スタンダード上場企業シライ電子工業株式会社の100%子会社です">
-            </div>
           </div>
           <div class="reason__box">
+            <div class="reason__picture">
+              <img src="assets/img/reason02.png" alt="作業委託とコンサルティングの両面でのご支援が可能">
+            </div>
             <div class="reason__textContents">
               <h3 class="reason__title">
                 作業委託とコンサルティングの<br>
@@ -153,21 +180,18 @@
                 環境資料の作成に対する人手が足りない企業様へのご支援と、含有化学物質調査に関する知見と経験が不足している企業様へのご支援の両面から弊社が全力でサポートいたします。
               </p>
             </div>
-            <div class="reason__picture">
-              <img src="assets/img/reason02.png" alt="作業委託とコンサルティングの両面でのご支援が可能">
-            </div>
           </div>
           <div class="reason__box">
+            <div class="reason__picture">
+              <img src="assets/img/reason03.png" alt="潤沢なリソースを背景とした万全のサポート体制">
+            </div>
             <div class="reason__textContents">
               <h3 class="reason__title">
-                潤沢なリソースを背景とした万全のサポート体制
+                潤沢なリソースを背景とした<br class="is-sp">万全のサポート体制
               </h3>
               <p class="reason__text">
                 人手不足の企業様に対して、お客様のご希望の納期にて環境資料の作成代行が可能です。<br>弊社の潤沢なリソースを背景に、貴社の固定費の変動費化の足掛かりにして頂くことができます。
               </p>
-            </div>
-            <div class="reason__picture">
-              <img src="assets/img/reason03.png" alt="潤沢なリソースを背景とした万全のサポート体制">
             </div>
           </div>
         </div>
@@ -181,9 +205,11 @@
         <p class="section__en">FLOW</p>
         <div class="flow__boxs">
           <div class="flow__box">
-            <div class="flow__picture">
+            <picture class="flow__picture">
+              <source media="(min-width: 768px)" srcset="assets/img/flow01.png">
+              <source media="(max-width: 767px)" srcset="assets/img/flow01-sp.png">
               <img src="assets/img/flow01.png" alt="ご相談">
-            </div>
+            </picture>
             <div class="flow__textContents">
               <h3 class="flow__title">ご相談</h3>
               <p class="flow__text">
@@ -193,9 +219,11 @@
             </div>
           </div>
           <div class="flow__box">
-            <div class="flow__picture">
-              <img src="assets/img/flow02.png" alt="ヒアリング">
-            </div>
+            <picture class="flow__picture">
+              <source media="(min-width: 768px)" srcset="assets/img/flow02.png">
+              <source media="(max-width: 767px)" srcset="assets/img/flow02-sp.png">
+              <img src="assets/img/flow02.png" alt="ご相談">
+            </picture>
             <div class="flow__textContents">
               <h3 class="flow__title">ヒアリング</h3>
               <p class="flow__text">
@@ -204,9 +232,11 @@
             </div>
           </div>
           <div class="flow__box">
-            <div class="flow__picture">
-              <img src="assets/img/flow03.png" alt="必要書類のご提出">
-            </div>
+            <picture class="flow__picture">
+              <source media="(min-width: 768px)" srcset="assets/img/flow03.png">
+              <source media="(max-width: 767px)" srcset="assets/img/flow03-sp.png">
+              <img src="assets/img/flow03.png" alt="ご相談">
+            </picture>
             <div class="flow__textContents">
               <h3 class="flow__title">必要書類のご提出</h3>
               <p class="flow__text">
@@ -216,9 +246,11 @@
             </div>
           </div>
           <div class="flow__box">
-            <div class="flow__picture">
-              <img src="assets/img/flow04.png" alt="お客様での内容チェック">
-            </div>
+            <picture class="flow__picture">
+              <source media="(min-width: 768px)" srcset="assets/img/flow04.png">
+              <source media="(max-width: 767px)" srcset="assets/img/flow04-sp.png">
+              <img src="assets/img/flow04.png" alt="ご相談">
+            </picture>
             <div class="flow__textContents">
               <h3 class="flow__title">お客様での内容チェック</h3>
               <p class="flow__text">
@@ -227,9 +259,11 @@
             </div>
           </div>
           <div class="flow__box">
-            <div class="flow__picture">
-              <img src="assets/img/flow05.png" alt="納品">
-            </div>
+            <picture class="flow__picture">
+              <source media="(min-width: 768px)" srcset="assets/img/flow04.png">
+              <source media="(max-width: 767px)" srcset="assets/img/flow04-sp.png">
+              <img src="assets/img/flow04.png" alt="ご相談">
+            </picture>
             <div class="flow__textContents">
               <h3 class="flow__title">納品</h3>
               <p class="flow__text">
@@ -301,8 +335,8 @@
               <p class="faq__right">納期はどれくらいですか?</p>
             </div>
             <p class="faq__body">
-              弊社のサービスは、大きく分けて①アドバイスと②作業代行の二つのサービスがございます<br>
-              アドバイス: 部品構成確認、材料情報、サプライヤーからの含有化学物質情報の手配、図面手配作業: 部品の構成質量確認や報告物質確認、報告書データ入力アドバイスと作業代行の両面からのご支援が可能です
+              通常の環境資料の作成代行は、5営業日から7営業日での納品をさせて頂いております<br>
+              別途、お急ぎの資料に関しては特急対応が可能です。
             </p>
           </div>
           <div class="faq__box">
@@ -311,32 +345,29 @@
               <p class="faq__right">料金はどれくらいですか?</p>
             </div>
             <p class="faq__body">
-              弊社のサービスは、大きく分けて①アドバイスと②作業代行の二つのサービスがございます<br>
-              アドバイス: 部品構成確認、材料情報、サプライヤーからの含有化学物質情報の手配、図面手配作業: 部品の構成質量確認や報告物質確認、報告書データ入力アドバイスと作業代行の両面からのご支援が可能です
+              通常の部品であれば3,500円～/点、多数のご依頼をいただく場合には別途月額料金にてお得なプランのご用意がございますので、まずはお気軽にご相談ください
             </p>
           </div>
         </div>
       </section>
 
-      <section class="about" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section class="about" id="about">
         <h2 class="section__title">chemSHERPAとは？</h2>
         <p class="section__en">WHAT’S chemSHERPA</p>
         <div class="about__box">
           <p class="about__title">chemSHEPA</p>
-          <p class="about__text">
-            chemSHERPA（読み方：ケムシェルパ）とは、<br>
-            製品に含まれる化学物質の情報を川上企業から川下企業まで<br>
-            サプライチェーン全体で適正に管理し、確実かつ効率的に伝達するために、<br>
-            経済産業省主導で2015年に開発・リリースされた<br>
-            情報伝達共通スキーム（またデータ作成支援ツール）を指します。
-          </p>
-          <div class="about__picture">
+          <p class="about__text">chemSHERPA（読み方：ケムシェルパ）とは、<br class="is-pc">製品に含まれる化学物質の情報を川上企業から川下企業まで<br
+              class="is-pc">サプライチェーン全体で適正に管理し、確実かつ効率的に伝達するために、<br class="is-pc">経済産業省主導で2015年に開発・リリースされた<br
+              class="is-pc">情報伝達共通スキーム（またデータ作成支援ツール）を指します。</p>
+          <picture class="about__picture">
+            <source media="(min-width: 768px)" srcset="assets/img/about.png">
+            <source media="(max-width: 767px)" srcset="assets/img/about-sp.png">
             <img src="assets/img/about.png" alt="chemSHEPA">
-          </div>
+          </picture>
         </div>
       </section>
 
-      <section class="company" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <section class="company">
         <h2 class="section__title">会社概要</h2>
         <p class="section__en">COMPANY</p>
         <div class="company__area">
@@ -375,20 +406,17 @@
       <section class="contact" id="contact">
         <h2 class="section__title">問い合わせ</h2>
         <p class="section__en">CONTACT</p>
-        <p class="contact__text">
-          お急ぎの方はお電話にてお問い合わせください。<br>
-          こちらからしつこい営業電話等はいたしません。ご安心ください。
-        </p>
+        <p class="contact__text">お急ぎの方はお電話にてお問い合わせください。<br class="is-pc">こちらからしつこい営業電話等はいたしません。ご安心ください。</p>
         <a href="tel:08057360250" class="contact__number">080-5736-0250</a>
-        <form action="#" class="contact__form">
+        <form method="post" action="mail.php" class="contact__form">
           <dl class="contact__row">
             <dt class="contact__left">
               <p class="contact__info contact__info--required">お名前</p>
             </dt>
             <dd class="contact__right">
               <div class="contact__wrapper">
-                <input type="text" name="name" id="name1">
-                <input type="text" name="name" id="name2" class="contact__name">
+                <input type="text" name="姓" id="name1">
+                <input type="text" name="名" id="name2" class="contact__name">
               </div>
             </dd>
           </dl>
@@ -397,7 +425,7 @@
               <p class="contact__info contact__info--required">メールアドレス</p>
             </dt>
             <dd class="contact__right">
-              <input type="email" name="email1" id="email1">
+              <input type="email" name="メールアドレス" id="email1">
             </dd>
           </dl>
           <dl class="contact__row">
@@ -405,7 +433,7 @@
               <p class="contact__info contact__info--required">メールアドレス確認</p>
             </dt>
             <dd class="contact__right">
-              <input type="email" name="email2" id="email2">
+              <input type="email" name="メールアドレス確認" id="email2">
             </dd>
           </dl>
           <dl class="contact__row">
@@ -413,7 +441,7 @@
               <p class="contact__info">貴社名</p>
             </dt>
             <dd class="contact__right">
-              <input type="text" name="company" id="company">
+              <input type="text" name="貴社名" id="company">
             </dd>
           </dl>
           <dl class="contact__row">
@@ -421,29 +449,24 @@
               <p class="contact__info contact__info--required">ご相談内容</p>
             </dt>
             <dd class="contact__right contact__right--select">
-              <select name="contents" id="contents">
-                <option value="agency">[作成代行ご希望] IMDS、chemSHERPA-AI/CI等、環境資料の作成代行に興味がある</option>
-                <option value="advice">[アドバイスご希望] IMDS、chemSHERPA-AI/CI等、環境資料のアドバイスに興味がある</option>
-                <option value="both">[両方ご希望] 作成代行、アドバイスの両方に興味がある</option>
+              <select name="ご相談内容" id="contents">
+                <option value="[作成代行ご希望] IMDS、chemSHERPA-AI/CI等、環境資料の作成代行に興味がある">[作成代行ご希望] IMDS、chemSHERPA-AI/CI等、環境資料の作成代行に興味がある</option>
+                <option value="[アドバイスご希望] IMDS、chemSHERPA-AI/CI等、環境資料のアドバイスに興味がある">[アドバイスご希望] IMDS、chemSHERPA-AI/CI等、環境資料のアドバイスに興味がある</option>
+                <option value="[両方ご希望] 作成代行、アドバイスの両方に興味がある">[両方ご希望] 作成代行、アドバイスの両方に興味がある</option>
               </select>
             </dd>
           </dl>
           <dl class="contact__row contact__row2">
             <dt class="contact__left">
-              <p class="contact__info">
-                その他、ご記載事項が<br>
-                あれば追記下さい
-              </p>
+              <p class="contact__info">その他、ご記載事項が<br class="is-pc">あれば追記下さい</p>
             </dt>
             <dd class="contact__right">
-              <textarea name="other"></textarea>
+              <textarea name="記載事項"></textarea>
             </dd>
           </dl>
           <dl class="contact__row contact__row2">
             <dt class="contact__left">
-              <p class="contact__info contact__info--required  contact__info--required2">
-                個人情報の<br>
-                取扱について
+              <p class="contact__info contact__info--required contact__info--required2">個人情報の<br class="is-pc">取扱について
               </p>
             </dt>
             <dd class="contact__right">
@@ -507,10 +530,10 @@
                 住所：〒105-0022　東京都港区海岸一丁目4番22号　SNビル9階<br>
                 社名：株式会社クラテク<br>
                 代表取締役：白井基治<br>
-                Eメールアドレス：
+                Eメールアドレス：yusa.yoshida@climatetech.co.jp
               </p>
               <div class="contact__checkArea">
-                <input type="checkbox" name="check" id="check" class="contact__check">
+                <input type="checkbox" name="同意する" id="check" class="contact__check">
                 <label for="check" class="contact__checkLabel">同意する</label>
               </div>
             </dd>
@@ -525,10 +548,43 @@
     <div class="banner__wrapper">
       <a href="#contact" class="banner">お問い合わせはこちら</a>
     </div>
+
+    <div class="float is-sp">
+      <a href="#contact" class="float__btn">お問い合わせはこちら</a>
+    </div>
   </main>
 
   <footer class="footer">
-
+    <div class="footer__area">
+      <a href="tel:08057360250" class="footer__number">080-5736-0250</a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#reason" class="footer__item--link">選ばれる理由</a>
+        </li>
+        <li class="footer__item">
+          <a href="#flow" class="footer__item--link">サービスの流れ</a>
+        </li>
+        <li class="footer__item">
+          <a href="#faq" class="footer__item--link">よくある質問</a>
+        </li>
+        <li class="footer__item">
+          <a href="#about" class="footer__item--link">クラテクについて</a>
+        </li>
+      </ul>
+      <div class="footer__titleArea">
+        <h2 class="footer__title">
+          <a href="#" class="footer__logo--link">
+            <img src="assets/img/logo.png" alt="CLIMATE TECHNOLOGIES">
+          </a>
+        </h2>
+        <p class="footer__company">
+          <a href="https://climatetech.co.jp/" class="footer__company--link">
+            <img src="assets/img/company.png" alt="運営会社">
+          </a>
+        </p>
+      </div>
+    </div>
+    <p class="footer__copy">©2024 CLIMATE TECHNOLOGIES co., ltd. All rights reserved</p>
   </footer>
 
   <!-- jQuery -->
@@ -537,7 +593,7 @@
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- script.js -->
-  <script src="assets/js/script.js"></script>i
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
